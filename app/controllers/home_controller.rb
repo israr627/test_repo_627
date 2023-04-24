@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
 
 	def dashboard
-		#OurWorker.perform_in(50, "hard")
+		OurWorker.perform_in(60, "hard")
 	end
 end
